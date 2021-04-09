@@ -1,0 +1,14 @@
+<div class="row justify-content-around">
+  <ng-template ngIf="favs.length>0">
+    <app-movie-card
+      class="col-4"
+      style="height: 100%"
+      *ngFor="let item of favs; let i = index"
+      [movie]="item"
+      [index]="i"
+      (deleteItem)="onDelete($event)"
+    >
+    </app-movie-card>
+  </ng-template>
+  <h3 *ngIf="favs.length <= 0">There is no favorite movies</h3>
+</div>
