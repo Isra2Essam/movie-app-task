@@ -1,0 +1,11 @@
+<div class="row justify-content-around align-items-center text-center ">
+  <ng-template ngIf="!isEmpty">
+    <app-movie-card
+      class="col-md-4"
+      *ngFor="let item of liked; let i = index"
+      [movie]="item"
+      [index]="i"
+    ></app-movie-card>
+  </ng-template>
+  <h3 *ngIf="isEmpty">There is no liked movies</h3>
+</div>
