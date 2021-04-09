@@ -1,0 +1,16 @@
+form{
+    color: black;
+}
+button{
+    
+    border: 0px;
+    color: white;
+}
+button:hover{
+    background-color: #ff244c;
+    color: white;
+}
+input.ng-invalid.ng-touched,
+textarea.ng-invalid.ng-touched {
+  border: 1px solid red;
+}
