@@ -1,6 +1,6 @@
 <div class="p-2">
   <div class="card">
-    <img class="card-img-top" style="height: 350px;" [routerLink]="'/movie-description/' + movie?.id"
+    <img class="card-img-top" style="height: 350px;cursor: pointer;" [routerLink]="'/movie-description/' + movie?.id"
       [src]="'https://image.tmdb.org/t/p/w500'+movie?.poster_path" alt="Card image cap">
     <div class="card-body" style="height: 100px;overflow: hidden;">
       <h5 class="card-title">{{movie?.original_title}}</h5>
