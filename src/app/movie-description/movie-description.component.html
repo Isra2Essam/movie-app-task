@@ -1,0 +1,23 @@
+<div class=" row">
+  <div class="card col-md-5 px-0">
+    <img class="card-img-top" style="height: 350px;" routerLink="/movie-description/{{movie?.id}}"
+      [src]="'https://image.tmdb.org/t/p/w500'+ movie?.poster_path" alt="Card image cap">
+    <div class="card-body py-3">
+      <h5 class="card-title">{{movie?.original_title}}</h5>
+    </div>
+  </div>
+  <div class="col-md-7 d-flex flex-column "><br>
+    <div class="border border-info p-3 rounded w-100">
+      <h3>Movie Description</h3>{{movie?.overview}}
+    </div><br>
+    <div class="d-flex flex-inline align-items-center">
+      <input class="form-control form-control-lg" type="text" placeholder="Add your comment" (keyup.enter)="addComment()" [(ngModel)]="newComment">
+      <button class="btn" (click)="addComment()"><i class="fa fa-3x fa-plus-square text-info"></i></button>
+    </div>
+    <div>
+      <ul>
+        <li *ngFor="let comment of commentsList">{{comment}}</li>
+      </ul>
+    </div>
+  </div>
+</div>
