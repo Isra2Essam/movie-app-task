@@ -13,7 +13,6 @@ import { MovieCardComponent } from './movie-card/movie-card.component';
 import { UpcomingMoviesComponent } from './upcoming-movies/upcoming-movies.component';
 import { NowPlayingMoviesComponent } from './now-playing-movies/now-playing-movies.component';
 import { MovieDescriptionComponent } from './movie-description/movie-description.component';
-import { LoadingSpinnerComponent } from './loading-spinner/loading-spinner.component';
 
 @NgModule({
   declarations: [
@@ -26,8 +25,7 @@ import { LoadingSpinnerComponent } from './loading-spinner/loading-spinner.compo
     MovieCardComponent,
     UpcomingMoviesComponent,
     NowPlayingMoviesComponent,
-    MovieDescriptionComponent,
-    LoadingSpinnerComponent
+    MovieDescriptionComponent
   ],
   imports: [
     BrowserModule,
