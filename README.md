@@ -31,7 +31,7 @@ Notes:
 - Nowplaying movies API: 'https://api.themoviedb.org/3/movie/now_playing?api_key=33a68e213419740b84e8e8d38b840d87'.
 - Image API 'https://image.tmdb.org/t/p/w500'+movie?.poster_path.
 
-Enhancements:
+Enhancements TODO:
 - Moving the api key handling to an interceptor.
 - Moving apis base Url to a common util or a service.
 - Create modules for each tab to apply modular lazy loading.
